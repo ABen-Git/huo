@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css初始化.css">
+    <style>
+        .header {
+            height: 120px;
+            width: 100%;
+            background-color: aqua;
+            position: relative;
+            overflow: hidden;
+
+
+        }
+
+        .header img {
+            height: 120px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .blacknav {
+            width: 100%;
+            height: 40px;
+            position: relative;
+            background-color: azure;
+        }
+
+        .blacknavleft {
+            width: 1000px;
+            height: 30px;
+            position: absolute;
+            left: 0px;
+            top: 5px;
+        }
+
+        .blacknavright {
+            height: 30px;
+            width: 400px;
+            position: absolute;
+            right: 0px;
+            top: 5px;
+        }
+
+        .blacknavleft li {
+            float: left;
+            position: relative;
+        }
+
+        .blacknavright li {
+            float: left;
+            position: relative;
+        }
+
+        .blacknav li span {
+            color: #424242;
+            margin: 0px 3.6px;
+        }
+
+        .xiazaiapp {
+            width: 169px;
+            height: 0px;
+            background-color: rgb(221, 122, 30);
+            position: absolute;
+            left: 50%;
+            top: 40px;
+            margin-left: -46px;
+            overflow: hidden;
+        }
+
+        .blacknavleft li:hover>.xiazaiapp {
+            height: 191px;
+        }
+
+        .shopcar {
+            width: 180px;
+            height: 0px;
+            background-color: aqua;
+            position: absolute;
+            top: 35px;
+            right: 50%;
+            overflow: hidden;
+        }
+
+        .blacknavright :hover>.shopcar {
+            height: 80px;
+        }
+
+        .whtnav {
+            width: 100%;
+            height: 88px;
+            background-color: aqua;
+            position: relative;
+        }
+
+        .whtnav a3 img {
+            float: left;
+        }
+
+        .whtnavleft {
+            width: 500px;
+            height: 40px;
+            background-color: antiquewhite;
+            float: left;
+        }
+
+
+        .whtnavleft li {
+            float: left;
+
+        }
+
+        .whtnavleft li a {
+            padding: 5px 10px;
+        }
+
+        .whtnavright {
+            width: 300px;
+            height: 40px;
+            position: absolute;
+            right: 10%;
+            top: 20px;
+            background-color: antiquewhite;
+        }
+
+        .xiaomishouji {
+            width: 100%;
+            height: 270px;
+            background-color: rgb(0, 255, 149);
+            position: absolute;
+            left: 0;
+            top: 100px;
+            display: none;
+            overflow: hidden;
+        }
+
+        .xiaomishouji li {
+            line-height: normal;
+        }
+
+        .tupianbox {
+            width: 360px;
+            height: 267px;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+
+        }
+
+        .whtnavleft :hover>.xiaomishouji {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="./pictures/001.png">
+    </div>
+    <div class="blacknav">
+        <div class="blacknavleft">
+            <u1>
+                <li><a>小米官网 </a><span>| </span></li>
+                <li><a> 小米商城</a><span>| </span></li>
+                <li><a>小米澎湃OS </a><span>| </span></li>
+                <li><a>IoT</a><span>| </span></li>
+                <li><a>云服务</a><span>| </span></li>
+                <li><a> 天星数科</a><span>| </span></li>
+                <li><a>有品 </a><span>| </span></li>
+                <li><a>小爱开放平台 </a><span>| </span></li>
+                <li><a>资质证照</a><span>| </span></li>
+                <li><a>协议规则</a><span>| </span></li>
+                <li><a> 下载app</a><span>|</span>
+                    <div class="xiazaiapp">
+                        <img src="./pictures/002.png">
+                        <p>小米商城app</p>
+                    </div>
+                </li>
+                <li><a>Select Location</a></li>
+            </u1>
+        </div>
+        <div class="blacknavright">
+            <u1>
+                <li><a>登录</a><span>| </span></li>
+                <li><a>注册</a><span>| </span></li>
+                <li><a>消息通知</a><span>| </span></li>
+                <li><a>购物车</a><span>| </span>
+                    <div class="shopcar">
+                        <p>没有商品快选购</p>
+
+                    </div>
+                </li>
+            </u1>
+        </div>
+    </div>
+    <div class="whtnav">
+        <a3> <img src="./pictures/003.png"></a3>
+        <div class="whtnavleft">
+            <u1>
+                <li><a>xiaomi手机</a>
+                    <div class="xiaomishouji">
+
+                        <div class="tupianbox">
+                            <a1><img src="./pictures/004.png"></a1>
+                        </div>
+
+                    </div>
+
+                </li>
+                <li><a>redmi手机</a></li>
+                <li><a>电视</a></li>
+                <li><a>笔记本</a></li>
+                <li><a>平板</a></li>
+                <li><a>家电</a></li>
+                <li><a>路由器</a></li>
+            </u1>
+        </div>
+        <div class="whtnavright">
+        </div>
+    </div>
+
+
+</body>
+
+</html>
